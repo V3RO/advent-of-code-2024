@@ -37,7 +37,7 @@ func SolvePartTwo(input string) int {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		// This way to hacky but tbh I can#t be bothered right now, might revisit it when I have more time
+		// This way to hacky but tbh I can't be bothered right now, might revisit it when I have more time
 		validMulsRegex := regexp.MustCompile("mul\\([0-9][0-9]?[0-9]?,[0-9][0-9]?[0-9]?\\)")
 		doNotToDoRegex := regexp.MustCompile("(don't\\(\\)).*?(do\\(\\))")
 		remainingDoNotRegex := regexp.MustCompile("(don't\\(\\)).*")
